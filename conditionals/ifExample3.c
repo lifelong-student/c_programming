@@ -1,27 +1,21 @@
+/*
+nested if: if one condition is true, yet other condition is checked (to any no. of levels) inside its body.
+*/
+
 #include <stdio.h>
-#include <string.h>
+#include <ctype.h>
 int main()
 {
-    char class[10];
-    int roll;
-    printf("Enter class name and roll-number: ");
-    scanf("%s%d", class, &roll);
+    char dummy;
+    printf("Enter value for dummy:");
+    scanf("%c", &dummy);
 
-    if (strcmp(class, "B7") == 0)
-    {
-        if (roll > 0 && roll < 76)
+    if (isalnum(dummy)) //(outer if)
+    {                       
+        if (isdigit(dummy)) //(inner if) 
         {
-            printf("You are welcome to class %s.\n", class);
-        }
-        else
-        {
-            printf("No student exists with given roll number: %d in class", roll);
+            printf("You entered a digit"); //executes line 17 if condition is line 13 and line 15 both are true
         }
     }
-    else
-    {
-        printf("You are not allowed \n");
-    }
-
     return 0;
 }

@@ -1,14 +1,18 @@
+/*
+Basic if example: to capture single true event
+*/
+
 #include <stdio.h>
-#include <string.h>
+#include <ctype.h>
 int main()
 {
-    char class[10];
-    printf("Enter class name: ");
-    scanf("%s", class);
+    char dummy;
+    printf("Enter value for dummy:");
+    scanf("%c", &dummy);
 
-    if (strcmp(class, "B1") == 0)
+    if(isalpha(dummy)) //executes line 15 if condition at line 13 is true
     {
-        printf("You are welcome to class %s.\n", class);
+        printf("You entered an alphabet");
     }
     return 0;
 }

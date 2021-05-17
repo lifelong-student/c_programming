@@ -1,19 +1,20 @@
+/*
+if else example: to capture true and false events
+*/
+
 #include <stdio.h>
-#include <string.h>
+#include <ctype.h>
 int main()
 {
-    char class[10];
-    printf("Enter class name: ");
-    scanf("%s", class);
+    char dummy;
+    printf("Enter value for dummy:");
+    scanf("%c", &dummy);
 
-    // true if number is less than 0
-    if (strcmp(class, "B1") == 0)
-    {
-        printf("You are welcome to class %s.\n", class);
-    }
-    else
-    {
-        printf("You are not allowed");
-    }
+    if (isalpha(dummy))  //condition-1
+        printf("You entered an alphabet"); //executes if condition at line 13 is true. Notice we can skip {} in case there is single statmenet after if or else
+    else //implicit condition-2 (will execute when if condition becomes false) 
+        {
+            printf("You entered a digit"); //executes if condition in line 13 is false
+        }
     return 0;
 }
