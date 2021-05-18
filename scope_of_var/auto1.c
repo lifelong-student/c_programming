@@ -12,6 +12,6 @@ int main()
 {
     auto int foo1 = 5; //explicitly decalriing foo1 as auto
     char foo2 = 'c';   //By default, any variable is 'auto' type
-    printf("%d %d", foo1, foo2);
+    printf("%d %c", foo1, foo2);
     return 0;
 }

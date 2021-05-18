@@ -9,9 +9,10 @@ d. lifetime: till program ends
 */
 #include <stdio.h>
 extern int var;
+
 int main(void)
 {
-  var=2;
+  //var=2; //Try uncommenting this and compiler will give error.
   printf("Value of 'extern' variable is not used, so no error");
   return 0;
 }

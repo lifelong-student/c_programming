@@ -15,7 +15,7 @@ int main()
     printf("%d", reg);
 
     //Note: Try uncommenting two statements below and program will not run. Reason being: register addresses can'nt be derived
-    //int *ptr=&reg;
+    //int *ptr = &reg;
     //printf("%u",ptr);
     return 0;
 }

@@ -1,5 +1,5 @@
 /*
-Header file for extern3.c
+Header file is for extern3.c
 */
 int num_stud = 75;
 int subjects = 5;
