@@ -8,10 +8,12 @@ c. scope: global/across files
 d. lifetime: till program ends
 */
 #include <stdio.h>
-extern int var;
+extern int var=2;
 int main(void)
 {
-  var=2;
+   //extern int var=2;
+   extern int var;
+
   printf("Value of 'extern' variable is not used, so no error");
   return 0;
 }
