@@ -21,7 +21,7 @@ int main()
         printf("You entered a digit or aplhabet"); //executes if condition in line 13 is false and line 15 is true
     }
 
-    if (!ispunct(dummy)) //conditon-3 (logical NOT)
+    if (! ispunct(dummy)) //conditon-3 (logical NOT)
         printf("\n Executes if dummy is not a punctutation mark. Notice if at line 24 is independt of if-else at line 17 and 19");
         
 return 0;

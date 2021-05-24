@@ -29,7 +29,7 @@ int main()
         {
             printf("You entered a digit"); //executed if condition at line 14 is false and condition at line 26 is true
         }
-        if (ispunct(dummy)) //(inner if)
+      if (ispunct(dummy)) //(inner if)
         {
             printf("You entered a digit"); //executed if condition at line 14 is false and condition at line 30 is true
         }
