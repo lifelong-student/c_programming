@@ -16,6 +16,9 @@ int main()
         {
             printf("You entered a digit"); //executes line 17 if condition is line 13 and line 15 both are true
         }
+        else {
+            printf("You entered an alphabet");
+        }
     }
     return 0;
 }

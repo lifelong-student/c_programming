@@ -20,7 +20,7 @@ int main()
 
     //e.g. 4
     res = 2 > 3 ? 5 > 3 ? 2 : 4 : 6 < 1 ? 3 : 5;
-    printf("%d\n", res);
+       printf("%d\n", res);
 
     //e.g. 5
     m < n   ? m < o ? printf("m is smallest") : printf("o is smallest")

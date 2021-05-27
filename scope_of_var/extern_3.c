@@ -19,4 +19,5 @@ int main()
     printf("num_stud: %d\n", num_stud); //accessing an extern variable
     printf("subjects: %d\n", subjects); //accessing an extern variable
     foo(); //accessing an extern function
+    return 0;
 }

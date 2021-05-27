@@ -30,7 +30,7 @@ int main()
     //explicit type conversion
     cres = cnum + (char)inum;
     printf("int to char explicit conversion of inum. ires: %c\n", cres);
-
+    
     dres = (int)fnum + (int)dnum;
     printf("float to char explicit conversion of fnum and double to int explicit conversion of dnum. ires: %d\n", dres);
 
