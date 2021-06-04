@@ -8,9 +8,9 @@ int main()
     do
     {
         printf("loopInvariant: %d\n", loopInvariant);
-        loopInvariant = loopInvariant + 1;
-        //loopInvariant++; (same as line 9; increment operator)
-        //loopInvariant+=1; (same as line 9;compound assigmnment operator)
+        loopInvariant = loopInvariant + 1; //2
+        //loopInvariant++; (same as line 11; increment operator)
+        //loopInvariant+=1; (same as line 11;compound assigmnment operator)
     } while (loopInvariant <=10); //exit controlled loop
 
     return 0;

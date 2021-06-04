@@ -12,10 +12,13 @@ int main()
     //Can initiliase loop variable outside or inside loop
     loopVar1 = 1;
     loopVar2 = 5;
-    for (loopVar1 = 1, loopVar2 = 5; loopVar2 >= 4, loopVar1 <= 5; loopVar1++)
+    for (loopVar1 = 1, loopVar2 = 5; loopVar2 >= 4, loopVar1 <= 5; loopVar1++) // comma in test-cond is working as logical OR (||)
     {
         printf("Product of %d and %d is %d \n", loopVar1,loopVar2, loopVar1 * loopVar2);
         loopVar2--;
     }
     return 0;
 }
+
+
+

@@ -1,18 +1,18 @@
 #include <stdio.h>
 int main()
 {
-    char choice;
-    int num;
+    char choice; //y
+    int num; //5
     printf("Enter choice and number: \n");
     scanf("%c%d", &choice, &num);
 
     // Outer Switch
-    switch (choice)
+    switch (choice) //y
     {
     case 'y':
     case 'Y':
         // Inner Switch
-        switch (num)
+        switch (num) //3
         {
         case 2:
             printf("Choice is 2");
@@ -22,6 +22,7 @@ int main()
             break;
         }
         break;
+        
     case 'n':
     case 'N':
         printf("Choice is No");

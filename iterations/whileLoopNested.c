@@ -5,18 +5,21 @@ Program to demonstrate:
 */
 int main()
 {
-    int stepSize;
+    int stepSize=1;
     char alphabet;
-    while (stepSize <= 4)
+    scanf("%c",alphabet);
+    
+    while (stepSize <= 4) //1,2,3,4,(5)
     {
         alphabet = 97; // (same as) alphabet = 'a';
-        while (alphabet <= 'e')
+        while (alphabet <= 'e') //97 <=101, 98<=101, 99<=101 100 101 102<=101
         {
-            printf("%c ", alphabet);
-            alphabet++;
+            printf("%c ", alphabet); //a, b c d e
+            alphabet++; //b  c d e f
         }
         printf("\n");
-        stepSize++;
+        stepSize++; //2
     }
     return 0;
 }
+

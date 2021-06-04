@@ -11,10 +11,10 @@ backwardJump: //label definition (giving a pc of code block a name)
 {
    if (var > 10)
       exit(0);                          //exit the program
-   printf("Value of var is: %d \n", var); //1,2,3,4,..... (iteration/loop)
+   printf("Value of var is: %d \n", var); //1,2,3,4,.....10 (iteration/loop)
 }
 
-   var = var + 1;     //2,
+   var = var + 1;     //2,3.....10, (11)
    goto backwardJump; //unconditional backward jump
 
    return 0;
