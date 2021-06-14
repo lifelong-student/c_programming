@@ -1,7 +1,7 @@
 #include <stdio.h>
 /*
 Program to demonstrate:
-a. run-time initialization of 3D array/matrix (multi-dimensional)
+a. run-time initialization of 3D array (multi-dimensional)
 b. printing a 2D array
 */
 void main()
@@ -10,12 +10,13 @@ void main()
     int i, j, k;
     printf("Enter matrix elements:\n"); //run-time initialization; taking matrix elements as input
 
-    for (i = 0; i < 2; i++)
+    for (i = 0; i < 2; i++) //0-1
     {
-        for (j = 0; j < 3; j++)
+        for (j = 0; j < 3; j++) //0-2
         {
-            for (k = 0; k < 2; k++)
+            for (k = 0; k < 2; k++) //0-1
                 scanf("%d", &matrix[i][j][k]); //see & is used for address
+                
         }
     }
     printf("\nMatrix is as follows: \n");

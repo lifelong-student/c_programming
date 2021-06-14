@@ -9,9 +9,10 @@ int main()
     int array1[4];                   //array declaration: array1 is an array of 4 elements of int type
     int array2[8] = {0};             //array declaration with elements assigned a default value of 0
     int array3[] = {1, 2, 3, 4, 5}; //array declaration with elements assigned a default value of 1,2,3,4,5 for respective elements
+    int array[5]={1,2};     //partial intialization
 
     int array1_size = sizeof(array1); //find total size (#bytes) in an array
-    int array2_size = sizeof(array2);
+    int array2_size = sizeof(&array2[0]);
     int array3_size = sizeof(array3);
 
     printf("Array1 size: %d\n", array1_size);

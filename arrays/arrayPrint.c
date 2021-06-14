@@ -9,10 +9,10 @@ int main()
 {
     //compile time
     int array1[3];                   //array declaration: array1 is an array of 3 elements of int type
-    int array2[8] = {0};             //array declaration with elements assigned a default value of 0
+    int array2[8] = {1};             //array declaration with elements assigned a default value of 0
     int array3[5] = {1, 2, 3, 4, 5}; //array declaration with elements assigned a default value of 1,2,3,4,5 for respective elements
 
-    int array1_size = sizeof(array1) / sizeof(array1[2]); //12/4=3
+    int array1_size = sizeof(array1) / sizeof(array1[0]); //12/4=3
 
     int i;
     printf("array1 elements:\n");     //contains garbage value as array1 is not initialized
@@ -25,6 +25,7 @@ int main()
     for (i = 0; i < array1_size; i++)
     {
         scanf("%d", &array1[i]);
+    }
 
         for (i = 0; i < array1_size; i++) //0,1,2,3
         {
